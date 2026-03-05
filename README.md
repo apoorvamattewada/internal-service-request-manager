@@ -22,7 +22,6 @@
 - [Project Structure](#project-structure)
 - [Git Workflow](#git-workflow)
 - [Future Improvements](#future-improvements)
-- [Relevance to CubX](#relevance-to-cubx)
 
 ---
 
@@ -513,24 +512,3 @@ release/*     — Release preparation
 - [ ] **Kubernetes** — Helm chart for AKS deployment
 
 ---
-
-## Relevance to CubX
-
-This project directly mirrors CubX's technical requirements:
-
-| CubX Requirement | How It's Demonstrated |
-|---|---|
-| Node.js + Express | REST API built with Express, proper middleware chain, async/await throughout |
-| React + TypeScript (strict) | All components in strict TypeScript, no `any`, proper prop types |
-| MongoDB | Mongoose ODM with compound indexes, population, aggregation pipeline |
-| Docker | Multi-stage Dockerfiles, Docker Compose for local full-stack dev |
-| CI/CD (GitHub Actions) | Full pipeline: lint → test → build → Docker push |
-| Azure deployment | Detailed App Service + Static Web Apps + Cosmos DB deployment guide |
-| RESTful API design | Proper HTTP verbs, status codes, resource naming, pagination |
-| Clean architecture | Controller/Service/Repository pattern with clear separation of concerns |
-| Scalable code | Rate limiting, indexes, pagination, env-based config, graceful shutdown |
-| Internal web application | Directly simulates the kind of internal tooling CubX builds for clients |
-
----
-
-*Built with ❤️ as a portfolio project demonstrating production-grade full-stack development.*
